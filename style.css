@@ -1,0 +1,15 @@
+/*Title Bits*/
+body{
+    display:flex;
+    align-items:center;
+}
+h1{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+h1, h3, input{
+    text-align:center;
+    margin:0 auto;
+}
+.topBitContainer{
+    margin: 25px;
+}
