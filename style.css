@@ -1,8 +1,4 @@
 /*Title Bits*/
-body{
-    display:flex;
-    align-items:center;
-}
 h1{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
@@ -10,6 +6,20 @@ h1, h3, input{
     text-align:center;
     margin:0 auto;
 }
+button{
+    margin:.5%;
+}
+input{
+    width:95%;
+    margin:5px
+}
+.toDoInput{
+    display:flex;
+    align-items: center;
+}
 .topBitContainer{
     margin: 25px;
+    display:block;
+    border: 1px solid black;
+    margin:0 auto;
 }
