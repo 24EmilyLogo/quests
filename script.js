@@ -4,31 +4,16 @@ document.addEventListener("DOMContentLoaded", function () {
     //Grabs the "toDoArea" element and makes a new element for the "toDoItem"s
     const toDoArea = document.getElementById("toDoArea");
     const toDoItem = document.createElement("p");
-    toDoItem.innerText = "meep";
+    toDoItem.innerHTML = document.getElementById('toDoItem').value
+    // toDoItem.innerText = "meep";
     toDoArea.appendChild(toDoItem);
   });
   addItem.addEventListener("click")
 
   /*
-  function guessCheck(){
-    //converts value of numInput to a number
-    let userGuess = parseInt(numInput.value)
-
-    //checks the 
-    if (userGuess > ranNum){
-        correctOrNot.innerText = "Wrong number! Try a smaller number."
-        correctOrNot.style.color = ("#ff3d3d")
-    } else if(userGuess < ranNum){
-        correctOrNot.innerText = "Wrong number! Try a larger number.";
-        correctOrNot.style.color = ("#ff3d3d")
-    } else if(userGuess === ranNum){
-        correctOrNot.innerText = "You got it!";
-        correctOrNot.style.color = ("#57d457")
-    } else{
-        correctOrNot.innerText = "Please input a valid number"
-        correctOrNot.style.color = ("#ff3d3d")
-    }
-}
-
-submitNum.addEventListener("click", guessCheck)
+  Go to Github and Look it up to 
+  see what you need to make this work
+  Also talk to Mom and Dad, they don't know JS 
+  but they can probably figure out
+  what you need to find. :D
   */
