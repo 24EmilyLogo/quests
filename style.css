@@ -1,25 +1,51 @@
-/*Title Bits*/
+/*Background Color*/
+body{
+    background-color: rgb(21, 39, 54);
+}
+/*Top Bits (Not to-do list area)*/
 h1{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 h1, h3, input{
     text-align:center;
     margin:0 auto;
-}
-button{
-    margin:.5%;
+    color:lightblue;
 }
 input{
     width:90%;
     margin:0 0 0  5px;
+    border:black solid 1px;
+    border-radius:8px;
+    background-color:lightblue;
+    
 }
-.toDoInput{
+#toDoInput{
     display:flex;
     align-items: center;
 }
 .topBitContainer{
     margin: 25px;
     display:block;
-    border: 1px solid black;
     margin:0 auto;
+    text-align:center;
+}
+#toDoItem{
+    color:black;
+}
+
+/* To do stuff (to do area) */
+p{
+    font-size:.85em;
+    color:lightblue;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+button{
+    height:1.5em;
+    margin:.15em;
+    border: 1px black solid;
+    border-radius:8px;
+    background-color:lightblue;
+}
+.strikethrough{
+    text-decoration:line-through;
 }

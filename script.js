@@ -8,6 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
       const toDoItemText = document.getElementById('toDoItem').value;
 
       if (toDoItemText.trim()!==""){
+        //makes the element for the to do item, changes the text to what the user inputted
         const toDoItem = document.createElement("p");
         toDoItem.innerHTML = toDoItemText;
         toDoArea.appendChild(toDoItem);
@@ -16,11 +17,21 @@ document.addEventListener("DOMContentLoaded", function () {
         //Adds The item to the top of the to do area
         const firstItem = toDoArea.firstChild;
         toDoArea.insertBefore(toDoItem, firstItem)
-        //Start with making the button
-        //Make button appear on all of the items
-        document.createElement("button")
+        //Finished button
+        const markOffItem = document.createElement("button");
+        markOffItem.innerText = "Finished"
+        toDoItem.appendChild(markOffItem);
+        markOffItem.addEventListener('click',()=>{
+          toDoItem.classList.toggle("strikethrough")
+        })
+
+        //Remove Item button
+        const removeItem = document.createElement("button");
+        removeItem.innerText = "Remove"
+        toDoItem.appendChild(removeItem);
+        removeItem.addEventListener('click',()=>{
+          toDoItem.parentNode.removeChild(toDoItem);
+        })
       }
-    // toDoItem.innerText = "meep";
   });
 });
-/* ASK MOM AND DAD about making it so I can remove the items too */
